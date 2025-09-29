@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+/* Global design  */
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* padding: 10px; */
+  padding: 0;
+  background: #070505;
+  color: #fde8e8;
+  scroll-behavior: smooth;
+}
+
+section {
+  /* border: #333 1px solid; */
+  /* margin: 0px 0px 5px 0px; */
+  margin-bottom: 10px;
+  /* height: auto; */
+  /* height: 100dvh; */
+}
+
+/* ----------------------------------- */
+
+/* Header section design */
+header {
+  text-align: center;
+  padding: 10px;
+  /* position: absolute; */
+  position: fixed;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  /* font-family: "Dancing Script"; */
+  font-family: "Playfair Display";
+  z-index: 10;
+}
+
+/* ----------------------------------- */
+
+/* Main section design */
+/* main {
+  
+} */
+
+/* Main => Hero-Section design */
+.hero-section {
+  /* position: absolute; */
+  /* width: 100%; */
+  display: block;
+}
+
+#hero-image {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("//img1.wsimg.com/isteam/getty/2181729110/:/rs=w:450,m") no-repeat
+      center;
+  /* content: " "; */
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.cta1 {
+  color: #f9f9f9;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  padding: 0.9rem;
+  top: 20%;
+  font-size: 3rem;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  letter-spacing: 0.3rem;
+  /* border: #070505 1px solid; */
+}
+
+.cta2 {
+  position: absolute;
+  text-align: center;
+  padding: 0.9rem;
+  top: 50%;
+  font-size: 3rem;
+  color: #f9f9f9;
+  font-family: "Playfair Display";
+  font-weight: 100;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* border: #070505 1px solid; */
+}
+
+.cta3 {
+  position: absolute;
+  text-align: center;
+  padding: 0.9rem;
+  top: 80%;
+  font-size: 3rem;
+  font-weight: 100;
+  width: 100%;
+  transition: 0.9s ease-in-out;
+  animation: cta_bounce 2000ms;
+  /* border: #070505 1px solid; */
+}
+
+.cta3 a:hover {
+  animation: cta_bounce 2000ms;
+  color: whitesmoke;
+}
+
+.cta3 a,
+footer a {
+  color: red;
+  text-decoration: none;
+}
+
+@keyframes cta_bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* ----------------------------------- */
+
+/* Main => Map-Section design */
+.map-section {
+  padding: 10px;
+  /* display: flex; */
+}
+
+.combination-section{
+  display: flex;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* ----------------------------------- */
+
+/* Main => Results-Section design */
+.search-filter {
+  display: flex;
+  gap: 10px;
+}
+
+#searchBox {
+  width: 100%;
+  /* width: 50%; */
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
+  /* outline-color: aqua; */
+}
+
+/* .table-section {
+
+} */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  padding: 0.9%;
+  /* border-radius: 10px; */
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: left;
+}
+
+td {
+  cursor: pointer;
+}
+
+#churchName {
+  width: 25%;
+}
+
+#churchAddress {
+  width: auto;
+}
+
+#churchPastor {
+  width: 15%;
+}
+
+tr.highlight {
+  background-color: #f1f1a1;
+  color: black;
+}
+
+thead {
+  background-color: #9b9090;
+}
+
+.results-section {
+  padding: 10px;
+  justify-content: start;
+  align-items: start;
+}
+
+select {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.pagination {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 2px;
+  padding: 5px 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: #9b9090;
+  color: white;
+}
+/* ----------------------------------- */
+
+/* Contact section design */
+
+.contact-us {
+  display: flex;
+  border: 2px white solid;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+  height: 50vh;
+}
+
+form {
+  justify-content: center;
+  border: 2px white solid;
+  border-radius: 20px;
+  width: 40%;
+  padding: 30px;
+  align-items: center;
+}
+
+textarea {
+  margin: 5px;
+  width: 100%;
+  resize: none;
+  height: 100px;
+}
+
+#contact-img {
+  /* display: none; */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("//img1.wsimg.com/isteam/getty/2181729110/:/rs=w:450,m") no-repeat
+      center;
+  /* content: " "; */
+  background-size: cover;
+  height: 100%;
+  /* aspect-ratio: 1; */
+  width: 50%;
+  border-radius: 10px;
+  /* border: 2px white solid; */
+}
+
+/* ----------------------------------- */
+/* Footer section design */
+.footer-section {
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+  /* background-color: #9b9090; */
+  padding: 25px;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+#brand {
+  color: red;
+  /* text-decoration: none; */
+  font-family: "Dancing Script";
+  font-size: x-large;
+}
+
+#brand a {
+  text-decoration: none;
+}
+/* ----------------------------------- */
+
+/* Responsive design */
+/* @media (max-width: 720px) {
+  body {
+    background-color: #9b9090;
+  }
+} */
+/* ----------------------------------- */
